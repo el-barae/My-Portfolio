@@ -128,7 +128,7 @@ const Portfolio = () => {
       description: 'Web application for running sports services with user authentication and VPS deployment',
       tech: ['React', 'Express', 'PostgreSQL', 'JWT', 'Tailwind'],
       type: 'Full Stack',
-      link: 'dimarun.com',
+      link: 'https://dimarun.com/en',
       featured: true
     },
     {
@@ -473,8 +473,11 @@ const Portfolio = () => {
                       {project.type}
                     </span>
                     {project.link && (
-                      <ExternalLink className="text-gray-400 group-hover:text-blue-500 transition-all duration-300 group-hover:scale-110 cursor-pointer" size={20} />
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="text-gray-400 group-hover:text-blue-500 transition-all duration-300 group-hover:scale-110 cursor-pointer" size={20} />
+                    </a>
                     )}
+
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 transition-colors duration-300">
