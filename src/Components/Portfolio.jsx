@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect} from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Download, Code, Database, Globe, Award, Calendar, ChevronDown, Menu, X, Zap, Star, Send, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 
 const Portfolio = () => {
@@ -11,8 +11,6 @@ const Portfolio = () => {
   const [formStatus, setFormStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   
-  const sectionRefs = useRef({});
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
