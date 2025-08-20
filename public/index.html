@@ -2,42 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./code.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#3B82F6" />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="El Barae AKACHAR - Full Stack Web Developer & Software Engineer" />
+    <meta name="description" content="Passionate Full Stack Web Developer from Tétouan, Morocco. Specialized in React, Spring Boot, AI integration, and blockchain technology. Ready to launch my career in IT with 9 months of experience and 6+ completed projects." />
+    <meta name="keywords" content="Full Stack Developer, Web Developer, Software Engineer, React, Spring Boot, JavaScript, Java, Python, Morocco, Tétouan, AI, Blockchain, Portfolio" />
+    <meta name="author" content="El Barae AKACHAR" />
+    <meta name="robots" content="index, follow" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elbarae-portfolio.com/" />
+    <meta property="og:title" content="El Barae AKACHAR - Full Stack Web Developer & Software Engineer" />
+    <meta property="og:description" content="Passionate Full Stack Web Developer from Tétouan, Morocco. Specialized in React, Spring Boot, AI integration, and blockchain technology." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta property="og:site_name" content="El Barae AKACHAR Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://elbarae-portfolio.com/" />
+    <meta property="twitter:title" content="El Barae AKACHAR - Full Stack Web Developer & Software Engineer" />
+    <meta property="twitter:description" content="Passionate Full Stack Web Developer from Tétouan, Morocco. Specialized in React, Spring Boot, AI integration, and blockchain technology." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/twitter-image.png" />
+    <meta property="twitter:creator" content="@elbarae" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elbarae-portfolio.com/" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="geo.region" content="MA-01" />
+    <meta name="geo.placename" content="Tétouan, Morocco" />
+    <meta name="geo.position" content="35.5781;-5.3684" />
+    <meta name="ICBM" content="35.5781, -5.3684" />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "El Barae AKACHAR",
+      "jobTitle": "Full Stack Web Developer",
+      "description": "Passionate Full Stack Web Developer specializing in React, Spring Boot, AI integration, and blockchain technology",
+      "url": "https://elbarae-portfolio.com",
+      "sameAs": [
+        "https://github.com/el-barae",
+        "https://linkedin.com/in/elbarae-akachar"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tétouan",
+        "addressCountry": "Morocco"
+      },
+      "email": "elbarae.akachar@gmail.com",
+      "telephone": "+212651587922",
+      "knowsAbout": [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Java",
+        "Spring Boot",
+        "Python",
+        "PostgreSQL",
+        "MySQL",
+        "Blockchain",
+        "Artificial Intelligence",
+        "Full Stack Development"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Faculty of Sciences - Tétouan"
+      }
+    }
+    </script>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>El Barae AKACHAR - Full Stack Web Developer & Software Engineer | Portfolio</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>You need to enable JavaScript to view this portfolio website.</p>
+        <p>This is a React-based portfolio showcasing the work of El Barae AKACHAR, Full Stack Web Developer from Morocco.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
