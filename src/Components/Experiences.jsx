@@ -34,9 +34,9 @@ const ExperienceSection = ({ visibleSections }) => {
 
   const testimonials = [
     {
-      name: "Project Supervisor",
+      name: "Diaa Alhak El Fallous",
       role: "Diaaland IT",
-      content: "El Barae demonstrated exceptional technical skills and dedication during his internship. His AI recruitment system exceeded our expectations.",
+      content: "El Barae demonstrated exceptional technical skills and dedication during his internship.",
       rating: 5
     }
   ];

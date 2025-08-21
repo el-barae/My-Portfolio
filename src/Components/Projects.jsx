@@ -82,6 +82,7 @@ const ProjectsSection = ({ visibleSections }) => {
       description: 'Decentralized e-commerce application with blockchain integration and cryptocurrency payments',
       tech: ['React', 'Hardhat', 'Solidity', 'Ethers.js', 'IPFS', 'MetaMask'],
       type: 'Blockchain',
+      link: 'https://blockchain-store.netlify.app/',
       featured: true
     },
     {
