@@ -54,50 +54,58 @@ const ProjectCard = ({ project, index }) => (
 // Projects Section Component
 const ProjectsSection = ({ visibleSections }) => {
   const projects = [
+  {
+    title: 'AI Recruitment Web Application',
+    description: 'Full-stack recruitment platform with AI recommendation system built for Diaaland company',
+    tech: ['Spring Boot', 'React', 'Next.js', 'PostgreSQL', 'FastAPI'],
+    type: 'Internship Project',
+    duration: '9 months (2023-2024)',
+    featured: true
+  },
+  {
+    title: 'DimaRun Sports Platform',
+    description: 'Web application for running sports services with user authentication and VPS deployment',
+    tech: ['React', 'Express', 'PostgreSQL', 'JWT', 'Tailwind'],
+    type: 'Full Stack',
+    link: 'https://dimarun.com/en',
+    featured: true
+  },
     {
-      title: 'AI Recruitment Web Application',
-      description: 'Full-stack recruitment platform with AI recommendation system built for Diaaland company',
-      tech: ['Spring Boot', 'React', 'Next.js', 'PostgreSQL', 'FastAPI'],
-      type: 'Internship Project',
-      duration: '9 months (2023-2024)',
-      featured: true
-    },
+    title: 'CarbonTrack - Blockchain Carbon Credit DApp',
+    description: 'Blockchain-based platform for carbon credit tokenization and tracking, developed during internship at Mchain',
+    tech: ['React', 'Next.js', 'Solidity', 'Ethers.js', 'Hardhat', 'IPFS', 'MetaMask'],
+    type: 'Blockchain',
+    duration: '1.5 months (Aug - Sep 2025)',
+    featured: true
+  },
+  {
+    title: 'Web3 E-commerce DApp',
+    description: 'Decentralized e-commerce application with blockchain integration and cryptocurrency payments',
+    tech: ['React', 'Hardhat', 'Solidity', 'Ethers.js', 'IPFS', 'MetaMask'],
+    type: 'Blockchain',
+    link: 'https://blockchain-store.netlify.app/',
+    featured: true
+  },
     {
-      title: 'EXNOV Company Website',
-      description: 'Professional company profile website with modern design and responsive layout',
-      tech: ['HTML/CSS', 'JavaScript'],
-      type: 'Web Development',
-      link: 'https://exnov.ma/'
-    },
-    {
-      title: 'DimaRun Sports Platform',
-      description: 'Web application for running sports services with user authentication and VPS deployment',
-      tech: ['React', 'Express', 'PostgreSQL', 'JWT', 'Tailwind'],
-      type: 'Full Stack',
-      link: 'https://dimarun.com/en',
-      featured: true
-    },
-    {
-      title: 'Web3 E-commerce DApp',
-      description: 'Decentralized e-commerce application with blockchain integration and cryptocurrency payments',
-      tech: ['React', 'Hardhat', 'Solidity', 'Ethers.js', 'IPFS', 'MetaMask'],
-      type: 'Blockchain',
-      link: 'https://blockchain-store.netlify.app/',
-      featured: true
-    },
-    {
-      title: 'Civil Engineering Training Platform',
-      description: 'Educational web application with payment integration for civil engineering courses',
-      tech: ['React', 'Express', 'PostgreSQL', 'Stripe.js', 'Tailwind'],
-      type: 'E-learning'
-    },
-        {
-      title: 'OLAS Library Management System',
-      description: 'Desktop application for library inventory management with intuitive user interface',
-      tech: ['Java Swing', 'MySQL'],
-      type: 'Desktop Application'
-    }
-  ];
+    title: 'EXNOV Company Website',
+    description: 'Professional company profile website with modern design and responsive layout',
+    tech: ['HTML/CSS', 'JavaScript'],
+    type: 'Web Development',
+    link: 'https://exnov.ma/'
+  },
+  {
+    title: 'Civil Engineering Training Platform',
+    description: 'Educational web application with payment integration for civil engineering courses',
+    tech: ['React', 'Express', 'PostgreSQL', 'Stripe.js', 'Tailwind'],
+    type: 'E-learning'
+  },
+  // {
+  //   title: 'OLAS Library Management System',
+  //   description: 'Desktop application for library inventory management with intuitive user interface',
+  //   tech: ['Java Swing', 'MySQL'],
+  //   type: 'Desktop Application'
+  // }
+]
 
   return (
     <section id="projects" className={`py-20 px-4 bg-white/50 transition-all duration-1000 ${visibleSections.has('projects') ? 'animate-fade-in-up' : 'opacity-0'}`}>

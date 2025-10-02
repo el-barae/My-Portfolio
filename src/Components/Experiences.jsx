@@ -19,33 +19,59 @@ const TestimonialCard = ({ testimonial, index }) => (
 const ExperienceSection = ({ visibleSections }) => {
   const experience = [
     {
+      role: 'Full Stack Blockchain Developer Intern',
+      company: 'Mchain',
+      period: 'Aug 2025 - Sep 2025',
+      description:
+        'Contributed to the design and implementation of a blockchain-based platform for carbon credit tokenization (CarbonTrack). Worked with smart contracts (Solidity), React/Next.js frontend, and Ethereum testnets (Sepolia).',
+      achievements: [
+        'Developed and deployed smart contracts (ERC20-based) for carbon credit tokenization',
+        'Implemented marketplace features for creating, buying, and cancelling tokenized carbon credit listings',
+        'Built a user-friendly dashboard with React/Next.js for portfolio tracking and transactions',
+        'Integrated wallet connection and message signing for authentication',
+        'Designed carbon footprint calculator using blockchain data'
+      ],
+      periode: 1.5
+    },
+    {
       role: 'Full Stack Developer Intern',
       company: 'Diaaland IT',
       period: 'Sep 2023 - Jul 2024',
-      description: 'Developed a comprehensive recruitment web application with AI-powered recommendation system. Worked with modern technologies including Spring Boot, React/Next.js, and PostgreSQL.',
+      description:
+        'Developed a comprehensive recruitment web application with AI-powered recommendation system. Worked with modern technologies including Spring Boot, React/Next.js, and PostgreSQL.',
       achievements: [
         'Built AI recommendation system for job matching',
         'Implemented secure authentication with JWT',
         'Designed responsive UI with React and Next.js',
         'Integrated email services with SpringMail'
-      ]
+      ],
+      periode: 9
     }
   ];
 
   const testimonials = [
     {
-      name: "Diaa Alhak El Fallous",
-      role: "Diaaland IT",
-      content: "El Barae demonstrated exceptional technical skills and dedication during his internship.",
+      name: 'Saber Hanor',
+      role: 'Mchain',
+      content:
+        'El Barae actively contributed to the CarbonTrack project, showing strong technical skills, autonomy, and analytical mindset.',
+      rating: 5
+    },
+    {
+      name: 'Diaa Alhak El Fallous',
+      role: 'Diaaland IT',
+      content:
+        'El Barae demonstrated exceptional technical skills and dedication during his internship.',
       rating: 5
     }
   ];
+
 
   return (
     <section id="experience" className={`py-20 px-4 transition-all duration-1000 ${visibleSections.has('experience') ? 'animate-fade-in-up' : 'opacity-0'}`}>
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-          Professional Experience
+          Professional Experiences
         </h2>
         
         <div className="max-w-4xl mx-auto">
@@ -63,7 +89,7 @@ const ExperienceSection = ({ visibleSections }) => {
                   </div>
                   <div className="mt-4 md:mt-0">
                     <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 text-sm rounded-full font-medium">
-                      9 Months
+                      {exp.periode} Months
                     </span>
                   </div>
                 </div>
